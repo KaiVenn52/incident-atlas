@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-21T07:00:18.919Z",
+  "browser": "Google Chrome through Playwright (isolated headless context)",
+  "reason": "Browser plugin and browser skill not available in this session; regular Playwright fallback per frontend-testing-debugging skill.",
+  "providerInference": false,
+  "observations": [
+    {
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 1100
+      },
+      "url": "http://127.0.0.1:4318/",
+      "title": "IncidentAtlas — Evidence before answers",
+      "checks": [
+        "page identity",
+        "nonblank",
+        "no framework overlay",
+        "no unexpected console/page errors",
+        "three synthetic cases",
+        "candidate and check tabs",
+        "verbatim source inspector",
+        "JSON export",
+        "invalid JSON",
+        "live unavailable",
+        "cancel pending request",
+        "no horizontal overflow"
+      ],
+      "unexpectedErrors": [],
+      "expectedErrors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "expectedErrorExplanation": "Live mode intentionally returns 503 without credentials; browser resource diagnostic is expected."
+    },
+    {
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "http://127.0.0.1:4318/",
+      "title": "IncidentAtlas — Evidence before answers",
+      "checks": [
+        "page identity",
+        "nonblank",
+        "no framework overlay",
+        "no unexpected console/page errors",
+        "three synthetic cases",
+        "candidate and check tabs",
+        "verbatim source inspector",
+        "JSON export",
+        "invalid JSON",
+        "live unavailable",
+        "cancel pending request",
+        "no horizontal overflow"
+      ],
+      "unexpectedErrors": [],
+      "expectedErrors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "expectedErrorExplanation": "Live mode intentionally returns 503 without credentials; browser resource diagnostic is expected."
+    }
+  ]
+}

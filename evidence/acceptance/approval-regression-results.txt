@@ -1,0 +1,21 @@
+✔ actual CLI defaults to no network even with a configured fake key (451.3235ms)
+✔ actual execute entry refuses missing configuration without a network call (550.2759ms)
+✔ preflight is deterministic and matches exact provider request without network (12.1895ms)
+✔ approval fails closed for absent credentials, stale approval, changed request, billing or uncovered credits (2.4502ms)
+✔ paid estimate must fit explicit approved amount (1.4128ms)
+✔ zero cost cannot authorize an assumed free run (1.5549ms)
+✔ durable reservation failure prevents dispatch (4.6612ms)
+✔ changed prepared input is rejected before lock or network (1.8526ms)
+✔ changed timeout cannot retain the original approved fingerprint (1.4982ms)
+✔ a future pricing review timestamp cannot authorize dispatch (1.1974ms)
+✔ single injected successful completion produces provenance after reservation; no automatic follow-up (145.3524ms)
+✔ injected failure 401 records unknown charge state without retry (2.357ms)
+✔ injected failure 429 records unknown charge state without retry (11.9531ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7954.65

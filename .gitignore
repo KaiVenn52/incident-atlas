@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+evidence/live-*.json
+test-results/
+evidence/recordings/
+evidence/demo-raw/
+deliverables/
+acceptance-approval.local.json
+evidence/acceptance/live-*
+private-onboarding/

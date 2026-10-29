@@ -1,0 +1,39 @@
+1
+00:00:00,600 --> 00:00:07,620
+IncidentAtlas: evidence before answers.
+Local synthetic demonstration. No AI inference.
+
+2
+00:00:07,620 --> 00:00:15,281
+A deployment changed the connection pool.
+Build a reviewable timeline from the supplied evidence.
+
+3
+00:00:15,281 --> 00:00:23,080
+The pool explanation is a candidate, not a confirmed cause.
+Follow its citation to the original source line.
+
+4
+00:00:23,080 --> 00:00:30,547
+Next checks come from the supplied runbook.
+Suggestions are text. The app cannot execute commands.
+
+5
+00:00:30,547 --> 00:00:37,900
+Conflicting recovery signals stay in the timeline.
+One healthy region does not establish global recovery.
+
+6
+00:00:37,900 --> 00:00:45,596
+An instruction inside a log stays untrusted data.
+There is no shell or production action tool to access.
+
+7
+00:00:45,596 --> 00:00:55,183
+Export the sources, report and provenance as JSON.
+Exact quotes establish attribution; human review is still required.
+
+8
+00:00:55,183 --> 00:01:02,323
+The real Nebius / NVIDIA adapter is implemented.
+Authorized live inference and public submission remain pending.

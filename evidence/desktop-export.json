@@ -1,0 +1,134 @@
+{
+  "input": {
+    "title": "Checkout latency after deploy",
+    "sources": [
+      {
+        "id": "deploy",
+        "name": "deployments.log",
+        "kind": "change",
+        "lines": [
+          "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4.",
+          "2026-10-18T09:42:00Z rollout complete; all 6 replicas healthy."
+        ]
+      },
+      {
+        "id": "app",
+        "name": "checkout.log",
+        "kind": "log",
+        "lines": [
+          "2026-10-18T09:43:00Z p95 latency 4200ms; connection acquisition timeout count=183.",
+          "2026-10-18T09:44:00Z HTTP 503 rate 12%; no application crash observed.",
+          "2026-10-18T09:45:00Z db active connections=24; database CPU=21%; max connections=400."
+        ]
+      },
+      {
+        "id": "book",
+        "name": "pool-exhaustion.md",
+        "kind": "runbook",
+        "lines": [
+          "Pool acquisition timeouts can indicate a saturated application connection pool.",
+          "Compare pool configuration and per-replica wait queues with the last healthy release.",
+          "Any configuration change or rollback requires incident commander approval."
+        ]
+      }
+    ]
+  },
+  "report": {
+    "summary": "Evidence assembled. Root cause remains unknown; review the cited observations and test the candidate explanation.",
+    "rootCause": "unknown",
+    "timeline": [
+      {
+        "statement": "release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4.",
+        "citations": [
+          {
+            "sourceId": "deploy",
+            "line": 1,
+            "quote": "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4."
+          }
+        ],
+        "timestamp": "2026-10-18T09:40:00Z"
+      },
+      {
+        "statement": "rollout complete; all 6 replicas healthy.",
+        "citations": [
+          {
+            "sourceId": "deploy",
+            "line": 2,
+            "quote": "2026-10-18T09:42:00Z rollout complete; all 6 replicas healthy."
+          }
+        ],
+        "timestamp": "2026-10-18T09:42:00Z"
+      },
+      {
+        "statement": "p95 latency 4200ms; connection acquisition timeout count=183.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 1,
+            "quote": "2026-10-18T09:43:00Z p95 latency 4200ms; connection acquisition timeout count=183."
+          }
+        ],
+        "timestamp": "2026-10-18T09:43:00Z"
+      },
+      {
+        "statement": "HTTP 503 rate 12%; no application crash observed.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 2,
+            "quote": "2026-10-18T09:44:00Z HTTP 503 rate 12%; no application crash observed."
+          }
+        ],
+        "timestamp": "2026-10-18T09:44:00Z"
+      },
+      {
+        "statement": "db active connections=24; database CPU=21%; max connections=400.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 3,
+            "quote": "2026-10-18T09:45:00Z db active connections=24; database CPU=21%; max connections=400."
+          }
+        ],
+        "timestamp": "2026-10-18T09:45:00Z"
+      }
+    ],
+    "hypotheses": [
+      {
+        "statement": "A smaller application connection pool may contribute to acquisition timeouts. The deployment correlation is not causal proof.",
+        "citations": [
+          {
+            "sourceId": "deploy",
+            "line": 1,
+            "quote": "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4."
+          }
+        ],
+        "status": "candidate"
+      }
+    ],
+    "checks": [
+      {
+        "statement": "Read-only investigation: Compare pool configuration and per-replica wait queues with the last healthy release.",
+        "citations": [
+          {
+            "sourceId": "book",
+            "line": 2,
+            "quote": "Compare pool configuration and per-replica wait queues with the last healthy release."
+          }
+        ]
+      }
+    ],
+    "unknowns": [
+      "Causality has not been established.",
+      "No independent reproduction or controlled mitigation result is supplied.",
+      "Source completeness and source authenticity have not been independently verified."
+    ]
+  },
+  "evidence": {
+    "provider": "Offline fixture",
+    "inference": false,
+    "validated": true,
+    "modelReturned": null,
+    "receivedAt": "2026-10-21T06:59:58.490Z"
+  }
+}

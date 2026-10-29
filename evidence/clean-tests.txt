@@ -1,0 +1,51 @@
+
+> incident-atlas@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ synthetic evidence set: pool (69.4583ms)
+✔ synthetic evidence set: conflict (1.5847ms)
+✔ synthetic evidence set: injection (1.686ms)
+✔ source IDs must be unique (6.1899ms)
+✔ malformed evidence and oversized lines rejected (2.8576ms)
+✔ forged quote rejected (2.2096ms)
+✔ unknown source and out-of-range line rejected (2.3143ms)
+✔ uncited observations rejected (1.5797ms)
+✔ unsupported timestamp rejected (1.5206ms)
+✔ confirmed root cause rejected (2.6028ms)
+✔ model cannot add executable action fields (1.7828ms)
+✔ shell command in suggestion rejected (3.6993ms)
+✔ prompt injection remains inert source text (1.141ms)
+✔ fixture citations follow edited line positions (1.1543ms)
+✔ missing credentials rejected before network (1.6123ms)
+✔ non-NVIDIA model rejected before network (0.7551ms)
+✔ injected transport validates request and returns clearly synthetic test evidence (104.1775ms)
+✔ provider HTTP 429 (1.2369ms)
+✔ provider HTTP 401 (5.2059ms)
+✔ provider HTTP 403 (1.1788ms)
+✔ provider HTTP 500 (1.0624ms)
+✔ provider network failure is sanitized (1.1444ms)
+✔ provider truncation rejected (3.5667ms)
+✔ wrong returned model rejected (1.7517ms)
+✔ malformed or uncited provider output rejected (6.9499ms)
+✔ timeout aborts pending transport (54.6656ms)
+✔ caller cancellation aborts pending transport (18.9295ms)
+✔ offline HTTP loop returns labeled fixture (226.7963ms)
+✔ cross-origin analysis rejected (15.9868ms)
+✔ JSON content type required (10.1402ms)
+✔ bad JSON rejected (9.3314ms)
+✔ unknown mode rejected (15.4075ms)
+✔ oversized request rejected (16.8327ms)
+✔ invalid evidence rejected (9.4579ms)
+✔ live mode fails closed without credentials (9.1006ms)
+✔ status does not expose credentials or claim prior inference (15.2454ms)
+✔ unknown API and unsupported mutation fail (20.5772ms)
+✔ no more than two concurrent provider calls; release is idempotent (2.9896ms)
+✔ six requests per minute; exactly sixty seconds restores capacity (0.5796ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1165.9229

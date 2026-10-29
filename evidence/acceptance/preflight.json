@@ -1,0 +1,17 @@
+{
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "requestSha256": "8709a770b49ded0be3368e4ecbe224098757993f9afd62ed064bbdd953ab9582",
+  "inputSha256": "ac7282a3e2270417a99230df7106f3cc7c08aab8c3b2a619d3f486f8bc828489",
+  "maxCalls": 1,
+  "maxOutputTokens": 5000,
+  "timeoutMs": 45000,
+  "automaticRetries": 0,
+  "planSha256": "5191b893b6b0fc716131fbd02bb1ba8cbe90a913a53f13e78896b0b117e01ddf",
+  "syntheticInput": true,
+  "inputUtf8Bytes": 898,
+  "requestUtf8Bytes": 2350,
+  "inputTokens": "not measured; use exact request JSON for the current model tokenizer",
+  "costUsd": "unknown until owner checks current account pricing and credit coverage",
+  "providerInferencePerformed": false
+}

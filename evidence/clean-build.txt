@@ -1,0 +1,13 @@
+
+> incident-atlas@0.1.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 23 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:  0.31 kB
+dist/assets/index-B8oxLJCD.css   12.38 kB │ gzip:  3.56 kB
+dist/assets/index-B7SjFEZP.js   233.73 kB │ gzip: 73.01 kB
+✓ built in 3.28s

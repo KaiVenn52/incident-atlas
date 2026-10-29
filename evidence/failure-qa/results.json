@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-22T04:37:53.218Z",
+  "browser": "Google Chrome via Playwright; browser plugin unavailable",
+  "providerRequests": 0,
+  "scope": "Targeted error presentation only; not authenticated provider verification.",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "error": "LIVE_NOT_CONFIGURED",
+      "httpStatus": 503,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "desktop-LIVE_NOT_CONFIGURED.png"
+    },
+    {
+      "viewport": "desktop",
+      "error": "PROVIDER_AUTH",
+      "httpStatus": 502,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "desktop-PROVIDER_AUTH.png"
+    },
+    {
+      "viewport": "desktop",
+      "error": "PROVIDER_RATE_LIMIT",
+      "httpStatus": 429,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "desktop-PROVIDER_RATE_LIMIT.png"
+    },
+    {
+      "viewport": "desktop",
+      "error": "PROVIDER_OUTPUT_REJECTED",
+      "httpStatus": 422,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "desktop-PROVIDER_OUTPUT_REJECTED.png"
+    },
+    {
+      "viewport": "mobile",
+      "error": "LIVE_NOT_CONFIGURED",
+      "httpStatus": 503,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "mobile-LIVE_NOT_CONFIGURED.png"
+    },
+    {
+      "viewport": "mobile",
+      "error": "PROVIDER_AUTH",
+      "httpStatus": 502,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "mobile-PROVIDER_AUTH.png"
+    },
+    {
+      "viewport": "mobile",
+      "error": "PROVIDER_RATE_LIMIT",
+      "httpStatus": 429,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "mobile-PROVIDER_RATE_LIMIT.png"
+    },
+    {
+      "viewport": "mobile",
+      "error": "PROVIDER_OUTPUT_REJECTED",
+      "httpStatus": 422,
+      "transport": "injected browser response; no provider contact",
+      "interceptedRequests": 1,
+      "reportVisible": false,
+      "retryEnabled": true,
+      "screenshot": "mobile-PROVIDER_OUTPUT_REJECTED.png"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+
+> incident-atlas@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ synthetic evidence set: pool (120.5443ms)
+✔ synthetic evidence set: conflict (5.5519ms)
+✔ synthetic evidence set: injection (1.3827ms)
+✔ source IDs must be unique (11.2184ms)
+✔ malformed evidence and oversized lines rejected (4.3081ms)
+✔ forged quote rejected (4.2964ms)
+✔ unknown source and out-of-range line rejected (8.068ms)
+✔ uncited observations rejected (7.4066ms)
+✔ unsupported timestamp rejected (2.2166ms)
+✔ confirmed root cause rejected (15.2819ms)
+✔ model cannot add executable action fields (6.7911ms)
+✔ shell command in suggestion rejected (2.3013ms)
+✔ prompt injection remains inert source text (1.1285ms)
+✔ fixture citations follow edited line positions (2.5422ms)
+✔ missing credentials rejected before network (2.7599ms)
+✔ non-NVIDIA model rejected before network (0.7088ms)
+✔ injected transport validates request and returns clearly synthetic test evidence (225.9567ms)
+✔ provider HTTP 429 (2.0952ms)
+✔ provider HTTP 401 (1.0183ms)
+✔ provider HTTP 403 (2.6825ms)
+✔ provider HTTP 500 (1.1389ms)
+✔ provider network failure is sanitized (8.207ms)
+✔ provider truncation rejected (5.932ms)
+✔ wrong returned model rejected (2.4885ms)
+✔ malformed or uncited provider output rejected (9.4572ms)
+✔ timeout aborts pending transport (137.9858ms)
+✔ caller cancellation aborts pending transport (16.4643ms)
+✔ offline HTTP loop returns labeled fixture (367.2338ms)
+✔ cross-origin analysis rejected (58.0919ms)
+✔ JSON content type required (35.3125ms)
+✔ bad JSON rejected (31.3192ms)
+✔ unknown mode rejected (35.8314ms)
+✔ oversized request rejected (127.979ms)
+✔ invalid evidence rejected (31.0658ms)
+✔ live mode fails closed without credentials (35.8121ms)
+✔ status does not expose credentials or claim prior inference (44.2182ms)
+✔ unknown API and unsupported mutation fail (59.9837ms)
+✔ no more than two concurrent provider calls; release is idempotent (2.8653ms)
+✔ six requests per minute; exactly sixty seconds restores capacity (5.6838ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10172.8146

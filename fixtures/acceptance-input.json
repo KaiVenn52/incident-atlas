@@ -1,0 +1,34 @@
+{
+  "title": "Checkout latency after deploy",
+  "sources": [
+    {
+      "id": "deploy",
+      "name": "deployments.log",
+      "kind": "change",
+      "lines": [
+        "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4.",
+        "2026-10-18T09:42:00Z rollout complete; all 6 replicas healthy."
+      ]
+    },
+    {
+      "id": "app",
+      "name": "checkout.log",
+      "kind": "log",
+      "lines": [
+        "2026-10-18T09:43:00Z p95 latency 4200ms; connection acquisition timeout count=183.",
+        "2026-10-18T09:44:00Z HTTP 503 rate 12%; no application crash observed.",
+        "2026-10-18T09:45:00Z db active connections=24; database CPU=21%; max connections=400."
+      ]
+    },
+    {
+      "id": "book",
+      "name": "pool-exhaustion.md",
+      "kind": "runbook",
+      "lines": [
+        "Pool acquisition timeouts can indicate a saturated application connection pool.",
+        "Compare pool configuration and per-replica wait queues with the last healthy release.",
+        "Any configuration change or rollback requires incident commander approval."
+      ]
+    }
+  ]
+}

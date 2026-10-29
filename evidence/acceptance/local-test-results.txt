@@ -1,0 +1,46 @@
+✔ actual CLI defaults to no network even with a configured fake key (415.2072ms)
+✔ actual execute entry refuses missing configuration without a network call (397.4558ms)
+✔ preflight is deterministic and matches exact provider request without network (8.6327ms)
+✔ approval fails closed for absent credentials, stale approval, changed request, billing or uncovered credits (2.145ms)
+✔ paid estimate must fit explicit approved amount (1.8494ms)
+✔ zero cost cannot authorize an assumed free run (1.2987ms)
+✔ durable reservation failure prevents dispatch (4.4932ms)
+✔ changed prepared input is rejected before lock or network (1.2789ms)
+✔ single injected successful completion produces provenance after reservation; no automatic follow-up (86.1854ms)
+✔ injected failure 401 records unknown charge state without retry (2.4378ms)
+✔ injected failure 429 records unknown charge state without retry (1.3037ms)
+✔ synthetic evidence set: pool (52.3437ms)
+✔ synthetic evidence set: conflict (1.078ms)
+✔ synthetic evidence set: injection (0.8095ms)
+✔ source IDs must be unique (4.8884ms)
+✔ malformed evidence and oversized lines rejected (1.8101ms)
+✔ forged quote rejected (1.9389ms)
+✔ unknown source and out-of-range line rejected (1.8225ms)
+✔ uncited observations rejected (1.3284ms)
+✔ unsupported timestamp rejected (1.2579ms)
+✔ confirmed root cause rejected (1.6968ms)
+✔ model cannot add executable action fields (1.1797ms)
+✔ shell command in suggestion rejected (3.0072ms)
+✔ prompt injection remains inert source text (1.2755ms)
+✔ fixture citations follow edited line positions (0.7614ms)
+✔ missing credentials rejected before network (2.9388ms)
+✔ non-NVIDIA model rejected before network (0.6263ms)
+✔ injected transport validates request and returns clearly synthetic test evidence (56.4739ms)
+✔ provider HTTP 429 (0.7489ms)
+✔ provider HTTP 401 (0.5885ms)
+✔ provider HTTP 403 (1.5354ms)
+✔ provider HTTP 500 (1.7424ms)
+✔ provider network failure is sanitized (1.2928ms)
+✔ provider truncation rejected (1.8393ms)
+✔ wrong returned model rejected (1.4687ms)
+✔ malformed or uncited provider output rejected (2.4045ms)
+✔ timeout aborts pending transport (23.9635ms)
+✔ caller cancellation aborts pending transport (13.8ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1461.2026
