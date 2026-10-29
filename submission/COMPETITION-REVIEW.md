@@ -31,7 +31,7 @@ The original presentation asked judges to install Node and read small raw JSON t
 - Existing desktop/mobile interaction QA passes; all 8 injected failure-state browser checks pass.
 - New static-demo QA passes at 1440×1000 and 390×844: historical labels, exact citations, runbook warning, keyboard tabs, Markdown/JSON exports, malformed evidence, three offline cases, disabled live mode, no horizontal overflow, no console errors, no API requests and no external requests.
 - No new inference was made during this review or video recording. Local live inference remains disabled.
-- Browser plugin was unavailable. Local rendering was checked using installed Chrome through Playwright, as allowed by the frontend-testing-debugging fallback. External browser verification is pending because the CUA tool could not initialize with the current C-drive space.
+- Browser plugin was unavailable. Local rendering was checked using installed Chrome through Playwright, as allowed by the frontend-testing-debugging fallback. CUA initially failed to initialize because of C-drive space, then recovered. The current local app was also checked in the in-app browser: actual recorded metrics and the runbook-only warning displayed correctly. Public deployment verification is still pending.
 
 Evidence: `evidence/review-qa/results.json`, `test-results.txt`, desktop/mobile screenshots, `evidence/ui-qa.json`, `evidence/failure-qa/results.json` and `evidence/provider-acceptance.json`.
 

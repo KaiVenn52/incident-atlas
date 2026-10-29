@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-29T16:30:13.877Z",
+  "createdAt": "2026-10-29T16:33:01.815Z",
   "providerInference": true,
   "providerEvidence": "evidence/provider-acceptance.json",
   "files": [
@@ -345,7 +345,7 @@
     },
     {
       "path": "submission/COMPETITION-REVIEW.md",
-      "sha256": "9dceddf90a23515d60e17fc5f6d8ef709c3d046889928441d9a82877f83369c7"
+      "sha256": "4d644890b663337ae8354fe841e2faf55c709b889f627a2e71a4d4ec4c9ee63d"
     },
     {
       "path": "submission/DEMO.md",
