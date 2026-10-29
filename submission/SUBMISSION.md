@@ -48,6 +48,6 @@ Public code repository: https://github.com/KaiVenn52/incident-atlas (public, MIT
 
 Judge access / source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0 . Extract the ZIP, install Node.js 22.16+, run npm ci, npm run build, npm start, and open http://127.0.0.1:4318. No account/payment is required for offline demonstrations. The actual single-provider response is included as a separate evidence artifact. See submission/JUDGE-QUICKSTART.md.
 
-Public YouTube demo: pending; local footage is not a public YouTube entry.
+YouTube demo: uploaded October 29, 2026, 72 seconds, English captions, saved as Unlisted at the owner's explicit request. Its link is kept in the private final-review packet and is deliberately absent from this public repository. The official publicly-visible-video wording remains unresolved for final submission; do not claim confirmed compliance or change visibility without owner instruction.
 
 New work: IncidentAtlas implementation began October 18, 2026, during the listed development window. Owner must verify authorship/ownership declarations. AI coding assistance was used; no synthetic user, deployment, provider or production success is claimed.

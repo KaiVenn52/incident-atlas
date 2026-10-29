@@ -20,8 +20,8 @@ Account history: the owner completed authentication, verification and billing di
 | Real Nebius inference with NVIDIA model | **VERIFIED: one fictional incident** | `evidence/provider-acceptance.json`: actual requested/returned model, response ID, usage, timestamps, hashes and report |
 | Provider model identity and output quality | Identity matches; one case manually reviewed | Five grounded timeline entries, candidate cause and unknown root cause retained. Causal citation support remains incomplete; no production quality benchmark |
 | Public open-source code | **VERIFIED PUBLIC, MIT** | https://github.com/KaiVenn52/incident-atlas ; initial published commit cbd658d97d435b4c0a970c59094212cbb1e560d0 |
-| Judge-accessible app or test build | Source test build prepared for public release | Node API + React app in downloadable ZIP; `JUDGE-QUICKSTART.md`; requires Node/npm, no account for offline cases |
-| Public YouTube demonstration | **Pending** | 61.84-second actual-UI MP4 with English captions prepared; rerecord with real inference evidence before a final qualifying claim |
+| Judge-accessible app or test build | **Public downloadable source test build verified** | https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0 ; GitHub asset uploaded and SHA-256 matched local archive; requires Node/npm, no account for offline cases |
+| YouTube demonstration | **Uploaded and saved as Unlisted, owner requested** | 72-second actual UI + saved provider response, English captions; checks found no issues. Viewing link is private and deliberately absent from this public repository. Rules' publicly-visible requirement remains unresolved |
 | Required provider / model feedback | Real single-case feedback drafted | `SUBMISSION.md` records actual timing/tokens, causal-review limitation and catalog/cookbook configuration friction |
 | Entrant eligibility / registration / legal declarations | **Pending owner confirmation** | Owner must review official rules and answer personal eligibility questions |
 | Final Devpost entry | **Not submitted** | Resolve items above; owner reviews final links and fields before submission |

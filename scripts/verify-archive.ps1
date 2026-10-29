@@ -6,7 +6,7 @@ try {
     $reviewManifestReader = [IO.StreamReader]::new($reviewArchive.GetEntry('MANIFEST.json').Open())
     try { $reviewManifest = $reviewManifestReader.ReadToEnd() | ConvertFrom-Json } finally { $reviewManifestReader.Dispose() }
     foreach ($reviewEntry in $reviewArchive.Entries) {
-        if ($reviewEntry.FullName -match '(^node_modules/|^dist/|^deliverables/|^private-onboarding/|(^|/)\.env$|(^|/)acceptance-approval\.local\.json$|^evidence/(acceptance/)?live-|(^|/)\.\./)') { throw "Excluded or unsafe file in archive: $($reviewEntry.FullName)" }
+        if ($reviewEntry.FullName -match '(^node_modules/|^dist/|^deliverables/|^private-onboarding/|(^|/)\.env$|(^|/)acceptance-approval\.local\.json$|^evidence/(acceptance/)?live-|^evidence/(submission-demo|IncidentAtlas-submission-demo\.mp4$)|(^|/)\.\./)') { throw "Excluded or unsafe file in archive: $($reviewEntry.FullName)" }
     }
     foreach ($reviewRequiredFile in @('scripts/live-acceptance.mjs','lib/live-acceptance.mjs','fixtures/acceptance-input.json','acceptance-approval.example.json','submission/LIVE-ACCEPTANCE.md')) {
         if (-not $reviewArchive.GetEntry($reviewRequiredFile)) { throw "Missing acceptance entry: $reviewRequiredFile" }
