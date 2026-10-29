@@ -4,15 +4,19 @@ Evidence before answers. A local incident review desk for engineers who need to 
 
 **Current evidence level: runnable local application plus one real Nebius inference on a fictional incident, accepted October 29, 2026.** The shared runtime adapter returned the requested NVIDIA model and validated the report's structure and citations. See `evidence/provider-acceptance.json` and `evidence/provider-validation.md`. One synthetic case does not establish production quality or complete hackathon eligibility.
 
-## Review in your browser
+## Try IncidentAtlas
+
+**[Open the interactive demo](https://kaivenn52.github.io/incident-atlas/) · [Watch the 81-second walkthrough](https://youtu.be/Syk7d-4AO0Y)**
+
+No account, installation or API key is required. All incidents are fictional.
 
 The new static review build runs entirely in the browser. Select **Review real Nebius run** to inspect the actual saved response, model identity, timing and usage without an API key or a new inference. Offline cases, exact-source inspection and handoff export also work. Runbook-only candidate citations are explicitly flagged. This is a historical response viewer, not a hosted live-inference service.
 
-Build with `npm run build:demo`; serve `dist-demo` at `/incident-atlas/`. `npm run qa:demo` checks desktop/mobile behavior and verifies zero API/external requests. The manually triggered `.github/workflows/pages.yml` publishes only this static output after GitHub Pages is enabled. **Online publication of the revised build is pending account access; no hosted URL is claimed yet.**
+Build with `npm run build:demo`; serve `dist-demo` at `/incident-atlas/`. `npm run qa:demo` checks desktop/mobile behavior and verifies zero API/external requests. The manually triggered `.github/workflows/pages.yml` publishes only this static output after GitHub Pages is enabled. The [public demo](https://kaivenn52.github.io/incident-atlas/) is deployed on GitHub Pages and has been verified in a browser, including historical response review, exact citations, the conflicting case and Markdown download.
 
 ## Run locally
 
-Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.1.0 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
+Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.2.0 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.0). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
 
 Requires Node.js 22.16+ (validated with Node 24.20) and npm. From this directory:
 
@@ -87,11 +91,11 @@ See `submission/READINESS.md` for the exact remaining submission blockers. MIT l
 
 ## Competition review
 
-The October 30 product/video audit and exact remaining gaps are in [COMPETITION-REVIEW.md](submission/COMPETITION-REVIEW.md). Current automated suite: **57/57**. The revised 81-second local video is a separate review candidate; the existing public YouTube video remains the published version until the replacement is uploaded.
+The October 30 product/video audit and exact remaining gaps are in [COMPETITION-REVIEW.md](submission/COMPETITION-REVIEW.md). Current automated suite: **57/57**. The revised 81.48-second video is publicly available on YouTube; the earlier video remains as a historical artifact.
 
 ## Review artifacts
 
-Public 72-second submission demonstration: [Watch IncidentAtlas on YouTube](https://youtu.be/0ncrvV8CwM8). It shows offline application examples and the saved response from the separately approved real Nebius request; recording made no new model call. Final Devpost submission remains pending.
+Public 81.48-second submission demonstration: [Watch IncidentAtlas on YouTube](https://youtu.be/Syk7d-4AO0Y). It shows offline application examples and the saved response from the separately approved real Nebius request; recording made no new model call. Final Devpost submission remains pending.
 
 The one-request live acceptance entry is `npm.cmd run acceptance`. Its default is local preflight only, even with a key configured. See `submission/LIVE-ACCEPTANCE.md` for the exact synthetic request, fixed NVIDIA model, 5,000-token output cap, one-call/no-retry limit, account and billing review, approval file and persistent attempt lock. The October 29 owner-approved execution returned an accepted report; the persistent lock prevents another blind invocation. `npm.cmd run qa:failures` reproduces the four error presentations with local browser-response injection only.
 

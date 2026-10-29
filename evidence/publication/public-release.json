@@ -1,0 +1,38 @@
+{
+  "verifiedAt": "2026-10-29T16:42:34.011Z",
+  "repository": "https://github.com/KaiVenn52/incident-atlas",
+  "identity": {
+    "login": "KaiVenn52",
+    "id": 200902756,
+    "repositoryOwnerMatches": true,
+    "cachedCliName": "kangming0602"
+  },
+  "pages": {
+    "url": "https://kaivenn52.github.io/incident-atlas/",
+    "workflowRun": "https://github.com/KaiVenn52/incident-atlas/actions/runs/40913490438",
+    "deployedCommit": "302072ceaef894c0799d3dd0c139663060443b29",
+    "conclusion": "success",
+    "browserVerified": {
+      "recordedResponse": true,
+      "sourceInspector": true,
+      "runbookOnlyWarning": true,
+      "conflictingTimeline": true,
+      "markdownDownload": true,
+      "liveOptionDisabled": true,
+      "consoleErrors": 0
+    }
+  },
+  "youtube": {
+    "url": "https://youtu.be/Syk7d-4AO0Y",
+    "channel": "Kang Ming Wong",
+    "visibility": "Public",
+    "ownerApproved": true,
+    "durationSeconds": 81.48,
+    "checks": "No issues found",
+    "publicationReceipt": true,
+    "playbackVerified": true,
+    "previousVideoPreserved": "https://youtu.be/0ncrvV8CwM8"
+  },
+  "newProviderRequests": 0,
+  "devpostSubmitted": false
+}

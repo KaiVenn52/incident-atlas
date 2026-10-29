@@ -2,11 +2,17 @@
 
 Public code: https://github.com/KaiVenn52/incident-atlas
 
-Source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0
+Source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.0
+
+## Open the browser demo
+
+https://kaivenn52.github.io/incident-atlas/
+
+No installation, account or payment required. Choose **Review real Nebius run**, inspect its citations and export a handoff. Try the conflicting-recovery and untrusted-log examples. The site makes no new model requests.
 
 ## New review build
 
-The revised source adds a static browser build (`npm run build:demo`), a **Review real Nebius run** entry, source-type warnings for candidate explanations, and a Markdown handoff. Its deployment is prepared but the public hosted URL is not yet verified. Clone the latest source for these additions; the v0.1.0 release remains a historical version.
+The revised source adds a static browser build (`npm run build:demo`), a **Review real Nebius run** entry, source-type warnings for candidate explanations, and a Markdown handoff. Its public deployment is verified. The v0.2.0 source test build includes these additions; v0.1.0 remains a historical version.
 
 ## Run the app
 
@@ -32,6 +38,6 @@ Live inference requires separately approved provider credentials and credits and
 
 ## Validation and video
 
-Current local automated suite: 57/57 after the October 30 review; local and static production builds passed. Run npm test to reproduce local tests (provider transport tests are injected). Historical desktop/mobile browser verification and the 61.81-second captioned offline recording are in evidence/. The included local video predates real inference and its final pending-inference caption is historical. The existing public 72-second YouTube video is https://youtu.be/0ncrvV8CwM8 . A revised approximately 81-second local video is ready for review, but has not replaced the published link.
+Current local automated suite: 57/57 after the October 30 review; local and static production builds passed. Run npm test to reproduce local tests (provider transport tests are injected). Historical desktop/mobile browser verification and the 61.84-second captioned offline recording are in evidence/. The included local video predates real inference and its final pending-inference caption is historical. The revised public 81.48-second YouTube video is https://youtu.be/Syk7d-4AO0Y . The earlier 72-second video remains available as a historical artifact.
 
 MIT license. No production data, hosted multi-user service, real-user benchmark or final Devpost submission is claimed.

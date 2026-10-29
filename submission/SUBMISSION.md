@@ -34,7 +34,7 @@ The local application builds and runs, with automated contract, adversarial, HTT
 
 ## Next steps
 
-Expand beyond the completed single real-inference case with manually reviewed reference incidents, collect feedback from on-call engineers, and validate the zero-key browser review build on its public host. Any production integration would require authentication, data-handling review and tenant isolation.
+Expand beyond the completed single real-inference case with manually reviewed reference incidents, collect feedback from on-call engineers, and keep the public browser review build available throughout judging. Any production integration would require authentication, data-handling review and tenant isolation.
 
 ## Tool feedback draft
 
@@ -46,8 +46,8 @@ Hands-on feedback from one real synthetic-case request: Nemotron produced a sche
 
 Public code repository: https://github.com/KaiVenn52/incident-atlas (public, MIT).
 
-Judge access / source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0 . Extract the ZIP, install Node.js 22.16+, run npm ci, npm run build, npm start, and open http://127.0.0.1:4318. No account/payment is required for offline demonstrations. The actual single-provider response is included as a separate evidence artifact. See submission/JUDGE-QUICKSTART.md.
+Judge access: https://kaivenn52.github.io/incident-atlas/ . No installation, account, API key or payment required. The browser demo includes three fictional offline cases and the actual saved response from the separately approved real Nebius request. Live inference is disabled on the public site. Source and local-server instructions are in the repository and submission/JUDGE-QUICKSTART.md.
 
-Public YouTube demo: https://youtu.be/0ncrvV8CwM8 . Published October 29, 2026, 72 seconds, English captions. The owner explicitly changed the initial Unlisted preference to Public; Studio confirmed the saved Public state. The video shows actual offline application footage and the saved response from the single real Nebius request, with no new model call while recording.
+Public YouTube demo: https://youtu.be/Syk7d-4AO0Y . Published October 30, 2026 (MYT), 81.48 seconds, English captions. It shows actual application footage, exact-source inspection, a runbook-only support warning, Markdown handoff export and the saved response from the single real Nebius request. Recording and replay make no new model call. The owner explicitly approved this new public upload; Studio confirmed publication and checks found no issues.
 
 New work: IncidentAtlas implementation began October 18, 2026, during the listed development window. Owner must verify authorship/ownership declarations. AI coding assistance was used; no synthetic user, deployment, provider or production success is claimed.
