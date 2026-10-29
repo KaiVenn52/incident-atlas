@@ -12,7 +12,7 @@ An incident channel can contain a confident explanation long before it contains 
 
 IncidentAtlas turns a supplied bundle of logs, deployment changes and runbooks into a reviewable incident brief. Each timeline observation, candidate explanation and next check carries a source ID, line number and exact quote. Selecting a citation opens the original supplied text. The brief retains unknowns and never marks a root cause as confirmed. Suggestions are inert review text; the application cannot execute shell commands or modify production.
 
-Three synthetic cases demonstrate a connection-pool configuration change, conflicting regional recovery signals, and an instruction embedded in an untrusted log. An editable evidence bundle and JSON export make each review reproducible.
+Three synthetic cases demonstrate a connection-pool configuration change, conflicting regional recovery signals, and an instruction embedded in an untrusted log. An editable evidence bundle, Markdown handoff and JSON export keep each review inspectable. A saved real Nebius result can be opened inside the product without making another request. Candidate explanations supported only by a generic runbook receive a visible warning.
 
 ## How we built it
 
@@ -34,7 +34,7 @@ The local application builds and runs, with automated contract, adversarial, HTT
 
 ## Next steps
 
-Complete authorized live inference with synthetic data, evaluate drafts against manually reviewed reference incidents, collect real user feedback, and prepare controlled judging access. Any production integration would require authentication, data-handling review and tenant isolation.
+Expand beyond the completed single real-inference case with manually reviewed reference incidents, collect feedback from on-call engineers, and validate the zero-key browser review build on its public host. Any production integration would require authentication, data-handling review and tenant isolation.
 
 ## Tool feedback draft
 

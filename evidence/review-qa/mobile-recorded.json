@@ -1,0 +1,147 @@
+{
+  "input": {
+    "title": "Checkout latency after deploy",
+    "sources": [
+      {
+        "id": "deploy",
+        "name": "deployments.log",
+        "kind": "change",
+        "lines": [
+          "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4.",
+          "2026-10-18T09:42:00Z rollout complete; all 6 replicas healthy."
+        ]
+      },
+      {
+        "id": "app",
+        "name": "checkout.log",
+        "kind": "log",
+        "lines": [
+          "2026-10-18T09:43:00Z p95 latency 4200ms; connection acquisition timeout count=183.",
+          "2026-10-18T09:44:00Z HTTP 503 rate 12%; no application crash observed.",
+          "2026-10-18T09:45:00Z db active connections=24; database CPU=21%; max connections=400."
+        ]
+      },
+      {
+        "id": "book",
+        "name": "pool-exhaustion.md",
+        "kind": "runbook",
+        "lines": [
+          "Pool acquisition timeouts can indicate a saturated application connection pool.",
+          "Compare pool configuration and per-replica wait queues with the last healthy release.",
+          "Any configuration change or rollback requires incident commander approval."
+        ]
+      }
+    ]
+  },
+  "report": {
+    "summary": "Checkout latency spikes and 503 errors observed after a deployment that changed DB_POOL_MAX from 40 to 4.",
+    "rootCause": "unknown",
+    "timeline": [
+      {
+        "statement": "Release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4.",
+        "citations": [
+          {
+            "sourceId": "deploy",
+            "line": 1,
+            "quote": "2026-10-18T09:40:00Z release checkout-api v2.18 started; DB_POOL_MAX changed from 40 to 4."
+          }
+        ],
+        "timestamp": "2026-10-18T09:40:00Z"
+      },
+      {
+        "statement": "Rollout complete; all 6 replicas healthy.",
+        "citations": [
+          {
+            "sourceId": "deploy",
+            "line": 2,
+            "quote": "2026-10-18T09:42:00Z rollout complete; all 6 replicas healthy."
+          }
+        ],
+        "timestamp": "2026-10-18T09:42:00Z"
+      },
+      {
+        "statement": "p95 latency 4200ms; connection acquisition timeout count=183.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 1,
+            "quote": "2026-10-18T09:43:00Z p95 latency 4200ms; connection acquisition timeout count=183."
+          }
+        ],
+        "timestamp": "2026-10-18T09:43:00Z"
+      },
+      {
+        "statement": "HTTP 503 rate 12%; no application crash observed.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 2,
+            "quote": "2026-10-18T09:44:00Z HTTP 503 rate 12%; no application crash observed."
+          }
+        ],
+        "timestamp": "2026-10-18T09:44:00Z"
+      },
+      {
+        "statement": "db active connections=24; database CPU=21%; max connections=400.",
+        "citations": [
+          {
+            "sourceId": "app",
+            "line": 3,
+            "quote": "2026-10-18T09:45:00Z db active connections=24; database CPU=21%; max connections=400."
+          }
+        ],
+        "timestamp": "2026-10-18T09:45:00Z"
+      }
+    ],
+    "hypotheses": [
+      {
+        "statement": "Reduced DB_POOL_MAX may have saturated the application connection pool causing latency and 503 errors.",
+        "citations": [
+          {
+            "sourceId": "book",
+            "line": 1,
+            "quote": "Pool acquisition timeouts can indicate a saturated application connection pool."
+          }
+        ],
+        "status": "candidate"
+      }
+    ],
+    "checks": [
+      {
+        "statement": "Read-only inspection of pool configuration and per-replica wait queues per the runbook, no commands required.",
+        "citations": [
+          {
+            "sourceId": "book",
+            "line": 2,
+            "quote": "Compare pool configuration and per-replica wait queues with the last healthy release."
+          }
+        ]
+      }
+    ],
+    "unknowns": [
+      "Missing direct metrics on connection wait time",
+      "Unclear whether DB_POOL_MAX change was intentional or accidental",
+      "No evidence of application code change beyond configuration"
+    ]
+  },
+  "evidence": {
+    "provider": "Nebius Token Factory",
+    "modelRequested": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "modelReturned": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "responseId": "chatcmpl-cdc27119-2d6b-4041-8ab5-d0d0239982da",
+    "inference": true,
+    "validated": true,
+    "durationMs": 10368,
+    "receivedAt": "2026-10-29T08:32:17.826Z",
+    "inputSha256": "ac7282a3e2270417a99230df7106f3cc7c08aab8c3b2a619d3f486f8bc828489",
+    "outputSha256": "a6eb52f420438edc36a85e3a2028f5d5fb66f700227cdec8a9db3519894ea75f",
+    "usage": {
+      "completion_tokens": 2840,
+      "prompt_tokens": 582,
+      "total_tokens": 3422,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    }
+  },
+  "recorded": true
+}

@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-29T16:28:41.119Z",
+  "reason": "Browser plugin not available; regular Playwright for local static-build QA per frontend-testing-debugging skill.",
+  "observations": [
+    {
+      "viewport": "desktop",
+      "recordedReview": true,
+      "citations": true,
+      "keyboardTabs": true,
+      "runbookOnlyWarning": true,
+      "markdownHandoff": true,
+      "jsonReplayLabel": true,
+      "offlineCases": true,
+      "invalidInputClearsReport": true,
+      "liveDisabled": true,
+      "apiCalls": 0,
+      "externalRequests": 0,
+      "consoleErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "recordedReview": true,
+      "citations": true,
+      "keyboardTabs": true,
+      "runbookOnlyWarning": true,
+      "markdownHandoff": true,
+      "jsonReplayLabel": true,
+      "offlineCases": true,
+      "invalidInputClearsReport": true,
+      "liveDisabled": true,
+      "apiCalls": 0,
+      "externalRequests": 0,
+      "consoleErrors": []
+    }
+  ]
+}

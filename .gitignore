@@ -1,5 +1,6 @@
 node_modules/
 dist/
+dist-demo/
 .env
 evidence/live-*.json
 test-results/
@@ -11,3 +12,5 @@ evidence/acceptance/live-*
 private-onboarding/
 evidence/IncidentAtlas-submission-demo.mp4
 evidence/submission-demo*
+evidence/IncidentAtlas-competition-demo.mp4
+evidence/competition-demo*

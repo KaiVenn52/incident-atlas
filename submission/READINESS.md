@@ -1,8 +1,8 @@
 # IncidentAtlas submission readiness
 
-Local readiness review date: October 29, 2026 (Asia/Kuala_Lumpur). Official competition rules were checked October 28; Builder Program terms were checked October 25. Track: **Best Apps and Agents**. Submission deadline: October 30, 2026 at 10:00 AM PDT, equivalent to October 31 at 01:00 MYT.
+Local readiness review date: October 30, 2026 (Asia/Kuala_Lumpur). Official competition rules were rechecked October 30; Builder Program terms were checked October 25. Track: **Best Apps and Agents**. Submission deadline: October 30, 2026 at 10:00 AM PDT, equivalent to October 31 at 01:00 MYT.
 
-**Decision: REAL_PROVIDER_ACCEPTANCE_VERIFIED / NOT_SUBMISSION_READY.** On October 29 the owner-provided promo was redeemed: USD 25 confirmed, before-card credit use stated by the console. A project key was explicitly approved and saved only in local .env. A separately approved single real request through the shared runtime adapter succeeded, with matching NVIDIA model identity, validated structure/citations and manual review. Full local suite: 52/52. The public MIT repository is verified. Source test build publication is in progress; public YouTube upload, eligibility declarations and final submission remain outstanding. Live UI remains disabled and no second provider request is approved.
+**Decision: REAL_PROVIDER_ACCEPTANCE_VERIFIED / NOT_SUBMISSION_READY.** On October 29 the owner-provided promo was redeemed: USD 25 confirmed, before-card credit use stated by the console. A project key was explicitly approved and saved only in local .env. A separately approved single real request through the shared runtime adapter succeeded, with matching NVIDIA model identity, validated structure/citations and manual review. Full local suite: 57/57. The public MIT repository is verified. The v0.1.0 source test build and original public YouTube upload are verified. The revised browser review build and competition video are locally prepared; public deployment/replacement, eligibility declarations and final submission remain outstanding. Live UI remains disabled and no second provider request is approved.
 
 Account history: the owner completed authentication, verification and billing directly. The assistant performed the authorized promo redemption, key creation and single fictional-data inference. No card top-up was performed. Immediate Usage ledger reconciliation was still pending after the response; a rounded USD 25.00 display does not prove zero charge. See `ACCOUNT-AND-CREDITS.md` and `evidence/provider-acceptance.json`. Personal screenshots, keys and voucher values are excluded from source archives.
 
@@ -12,7 +12,7 @@ Account history: the owner completed authentication, verification and billing di
 |---|---|---|
 | Runnable app | Local implementation | `npm ci`, `npm run build`, `npm start`; loopback UI and API |
 | Source-based timeline, candidate explanations, suggestions | Local synthetic demonstrations | Three fixtures; exact-quote and line-reference checks |
-| Failure and adversarial validation | Current full suite 52/52 | October 29, after endpoint/model configuration revision; `evidence/provider-validation.md`. Automated provider transports are injected; the separate real call is recorded independently |
+| Failure and adversarial validation | Current full suite 57/57 | October 29, after endpoint/model configuration revision; `evidence/provider-validation.md`. Automated provider transports are injected; the separate real call is recorded independently |
 | Desktop / mobile interaction QA | Local real browser | `evidence/ui-qa.json`, PNG screenshots, WebM recordings |
 | Targeted inference failure UX | 8/8 local browser checks pass | `evidence/failure-qa/results.json`; missing config, auth, 429 and invalid-citation responses injected at desktop/mobile widths; no provider requests |
 | Reproducible source package | Historical baseline clean-copy validation | `evidence/clean-package.json`; original install, 39/39 tests, build and HTML/JS/API smoke checks. Acceptance additions validated separately |
@@ -34,7 +34,7 @@ Account creation, Builder Program credit application, acceptance of provider/mod
 
 Exact citations prove where a quotation came from. They do not prove the source is truthful or the model's paraphrase follows from it. The UI explicitly retains human review and an unknown root cause. There is no retrieval from real production systems, authentic log ingestion, measured incident-resolution improvement, or real-user benchmark. Local synthetic coverage must not be described as model accuracy.
 
-The app is a loopback review tool. Before hosting, add authentication, tenant isolation, approved data handling, secret management, cost controls beyond this process-local limiter, and hosting-specific security review. Do not expose the current local server directly to the internet.
+The live-capable app is a loopback review tool. A separate static review build contains fictional examples and one saved real provider response, disables live inference and makes no API calls. Its public deployment is pending. Before hosting the live-capable API, add authentication, tenant isolation, approved data handling, secret management, cost controls beyond this process-local limiter, and hosting-specific security review. Do not expose the current local server directly to the internet.
 
 ## Final owner review packet
 

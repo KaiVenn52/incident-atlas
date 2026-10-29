@@ -10,7 +10,10 @@
     "qa": "node scripts/ui-qa.mjs",
     "start": "node --env-file-if-exists=.env server.mjs",
     "acceptance": "node --env-file-if-exists=.env scripts/live-acceptance.mjs",
-    "qa:failures": "node scripts/failure-qa.mjs"
+    "qa:failures": "node scripts/failure-qa.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "qa:demo": "node scripts/review-qa.mjs",
+    "record:competition": "node scripts/record-competition-demo.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -4,6 +4,12 @@ Evidence before answers. A local incident review desk for engineers who need to 
 
 **Current evidence level: runnable local application plus one real Nebius inference on a fictional incident, accepted October 29, 2026.** The shared runtime adapter returned the requested NVIDIA model and validated the report's structure and citations. See `evidence/provider-acceptance.json` and `evidence/provider-validation.md`. One synthetic case does not establish production quality or complete hackathon eligibility.
 
+## Review in your browser
+
+The new static review build runs entirely in the browser. Select **Review real Nebius run** to inspect the actual saved response, model identity, timing and usage without an API key or a new inference. Offline cases, exact-source inspection and handoff export also work. Runbook-only candidate citations are explicitly flagged. This is a historical response viewer, not a hosted live-inference service.
+
+Build with `npm run build:demo`; serve `dist-demo` at `/incident-atlas/`. `npm run qa:demo` checks desktop/mobile behavior and verifies zero API/external requests. The manually triggered `.github/workflows/pages.yml` publishes only this static output after GitHub Pages is enabled. **Online publication of the revised build is pending account access; no hosted URL is claimed yet.**
+
 ## Run locally
 
 Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.1.0 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
@@ -31,11 +37,11 @@ UI QA uses installed Google Chrome through Playwright (`channel: chrome`), and P
 2. Review the ordered timeline. Open Candidates and follow `deploy:1` to the exact original source line.
 3. Open Next checks. The runbook suggestion is review text; nothing is executed.
 4. Review Still unknown. Correlation does not confirm causation.
-5. Export the input, report and provenance as JSON for human review.
+5. Export a Markdown incident handoff, or the input, report and provenance as JSON.
 6. Try the conflicting recovery case and the malicious log-payload case. Neither produces a confirmed root cause.
 7. Edit the JSON to supply your own source bundle. Invalid evidence is rejected before provider access.
 
-Sources have unique `id`, display `name`, `kind` (`log`, `change`, or `runbook`), and `lines`. Title length: 160 characters. Up to 12 sources, 200 lines per source, 2,000 characters per line, 80,000 characters for the input bundle. HTTP request limit: 100,000 bytes. Example data lives in `lib/fixtures.mjs`. All provided incidents and metrics are fictional.
+Sources have unique `id`, display `name`, `kind` (`log`, `change`, or `runbook`), and `lines`. Title length: 160 characters. Up to 12 sources, 200 lines per source, 2,000 characters per line, 80,000 characters for the input bundle. HTTP request limit: 100,000 bytes. Example data lives in `lib/fixtures.mjs`. All example incidents and their operational metrics are fictional. Provider timing and usage in the saved receipt are actual.
 
 ## Nebius / NVIDIA runtime integration
 
@@ -79,6 +85,10 @@ The response export includes requested and returned model, provider response ID,
 
 See `submission/READINESS.md` for the exact remaining submission blockers. MIT license; no NVIDIA weights are distributed. Respect the provider and model terms for runtime use.
 
+## Competition review
+
+The October 30 product/video audit and exact remaining gaps are in [COMPETITION-REVIEW.md](submission/COMPETITION-REVIEW.md). Current automated suite: **57/57**. The revised 81-second local video is a separate review candidate; the existing public YouTube video remains the published version until the replacement is uploaded.
+
 ## Review artifacts
 
 Public 72-second submission demonstration: [Watch IncidentAtlas on YouTube](https://youtu.be/0ncrvV8CwM8). It shows offline application examples and the saved response from the separately approved real Nebius request; recording made no new model call. Final Devpost submission remains pending.
@@ -87,7 +97,7 @@ The one-request live acceptance entry is `npm.cmd run acceptance`. Its default i
 
 If no account exists yet, `submission/ACCOUNT-AND-CREDITS.md` records the official account / hackathon credit / Builder Program routes, observed form fields, copy-ready project description, and exact owner actions still needed. The event promo was redeemed October 29 and USD 25 was confirmed before the approved request; Builder Program membership is separate and unverified.
 
-`evidence/IncidentAtlas-local-demo.mp4` is a 61.84-second silent, captioned recording of the real offline UI. `evidence/VALIDATION.md` records local checks and their limits. `deliverables/IncidentAtlas-local-review.zip` is the source/evidence review package; `.env`, node_modules, build output and temporary recordings are excluded. `MANIFEST.json` records SHA-256 digests. Run `node scripts/package.mjs`, then `node scripts/verify-archive.mjs` to regenerate and check the archive.
+`evidence/IncidentAtlas-local-demo.mp4` is a 61.81-second silent, captioned recording of the real offline UI. `evidence/VALIDATION.md` records local checks and their limits. `deliverables/IncidentAtlas-local-review.zip` is the source/evidence review package; `.env`, node_modules, build output and temporary recordings are excluded. `MANIFEST.json` records SHA-256 digests. Run `node scripts/package.mjs`, then `node scripts/verify-archive.mjs` to regenerate and check the archive.
 
 The October 21 baseline runtime was independently extracted, installed, tested and built, with HTML/JS/API smoke checks; see `evidence/clean-package.json`. The later acceptance-entry additions have separate targeted evidence under `evidence/acceptance/` and `evidence/failure-qa/`; the baseline clean-copy record is not presented as a new full-package rerun. `scripts/check-clean.mjs` rechecks an extracted copy in `deliverables/clean-check` using its project-local npm cache. The extraction directory is a local verification workspace, not part of the source archive.
 

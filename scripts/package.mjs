@@ -3,9 +3,9 @@ import {resolve,relative,sep} from 'node:path';
 import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 const root=resolve('.');
-const excluded=new Set(['node_modules','dist','.git','.env','acceptance-approval.local.json','private-onboarding','deliverables','recordings','demo-raw']);
+const excluded=new Set(['node_modules','dist','dist-demo','.git','.env','acceptance-approval.local.json','private-onboarding','deliverables','recordings','demo-raw']);
 const files=[];
-async function walk(dir){for(const item of await readdir(dir,{withFileTypes:true})){if(excluded.has(item.name)||item.name==='MANIFEST.json')continue;const path=resolve(dir,item.name),rel=relative(root,path).split(sep).join('/');if(/^evidence\/(?:acceptance\/)?live-/.test(rel)||/^evidence\/(?:submission-demo|IncidentAtlas-submission-demo\.mp4$)/.test(rel))continue;if(item.isDirectory())await walk(path);else if(item.isFile())files.push({path:rel,sha256:createHash('sha256').update(await readFile(path)).digest('hex')});}}
+async function walk(dir){for(const item of await readdir(dir,{withFileTypes:true})){if(excluded.has(item.name)||item.name==='MANIFEST.json')continue;const path=resolve(dir,item.name),rel=relative(root,path).split(sep).join('/');if(/^evidence\/(?:acceptance\/)?live-/.test(rel)||/^evidence\/(?:(?:submission|competition)-demo|IncidentAtlas-(?:submission|competition)-demo\.mp4$)/.test(rel))continue;if(item.isDirectory())await walk(path);else if(item.isFile())files.push({path:rel,sha256:createHash('sha256').update(await readFile(path)).digest('hex')});}}
 await walk(root);files.sort((a,b)=>a.path.localeCompare(b.path));
 const providerRecord=JSON.parse(await readFile('evidence/provider-acceptance.json','utf8').catch(error=>{if(error.code==='ENOENT')return 'null';throw error;}));
 const providerInference=providerRecord?.state==='accepted'&&providerRecord?.evidence?.inference===true&&providerRecord?.evidence?.validated===true;
