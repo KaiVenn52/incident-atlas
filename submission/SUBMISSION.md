@@ -44,9 +44,9 @@ Hands-on feedback from one real synthetic-case request: Nemotron produced a sche
 
 ## Required links and disclosures
 
-Public code repository: pending owner-approved publication.
+Public code repository: https://github.com/KaiVenn52/incident-atlas (public, MIT).
 
-Judge access / test build: local source package prepared; final access method pending.
+Judge access / source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0 . Extract the ZIP, install Node.js 22.16+, run npm ci, npm run build, npm start, and open http://127.0.0.1:4318. No account/payment is required for offline demonstrations. The actual single-provider response is included as a separate evidence artifact. See submission/JUDGE-QUICKSTART.md.
 
 Public YouTube demo: pending; local footage is not a public YouTube entry.
 

@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-29T08:36:05.560Z",
+  "createdAt": "2026-10-29T08:59:33.660Z",
   "providerInference": true,
   "providerEvidence": "evidence/provider-acceptance.json",
   "files": [
@@ -217,7 +217,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "4018e66bdd241907cebf67097534259bd5d445cc18923cfe17134194522f708d"
+      "sha256": "27630aeb6ed780f90be690de670064220bef12483e71754bd6eb04901cdf257a"
     },
     {
       "path": "scripts/check-clean.mjs",
@@ -276,12 +276,20 @@
       "sha256": "1eeb03de09f03b5b59cdf7eb5d323495e69b25023cb7852ffad1ef203050c3a8"
     },
     {
+      "path": "submission/JUDGE-QUICKSTART.md",
+      "sha256": "1a23d65947732ba96affff032d948ebf56c9dfb68f7a254cebce89e4fd532ff3"
+    },
+    {
       "path": "submission/LIVE-ACCEPTANCE.md",
       "sha256": "a09caf649a737e561d76a48c1bc7a0646f37332efd90e7d2716b7bb0d68b9aba"
     },
     {
       "path": "submission/READINESS.md",
-      "sha256": "6a418ea29d8e5074345f931b897caa9bec9ca519892262cb2da69009875c4e22"
+      "sha256": "4e159e69f1ae6ab6988659915180d940605a456cb166ee8310b47d1b08edf5d3"
+    },
+    {
+      "path": "submission/RELEASE-NOTES.md",
+      "sha256": "4589aacc99bb70f71e7c36198273f7e673078dd3347083324d980d9498a0277f"
     },
     {
       "path": "submission/RULES.md",
@@ -289,7 +297,7 @@
     },
     {
       "path": "submission/SUBMISSION.md",
-      "sha256": "2d66522a230335872ee5b7047df185659beda3d04b9fefc89342fbb91b2b7edf"
+      "sha256": "1207c8f400bcc0d7d525de4b5f0ae83dbee7ca82a25ebce5c9a23c110eef9a0f"
     },
     {
       "path": "tests/acceptance.test.mjs",

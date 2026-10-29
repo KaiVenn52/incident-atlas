@@ -6,6 +6,8 @@ Evidence before answers. A local incident review desk for engineers who need to 
 
 ## Run locally
 
+Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.1.0 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.1.0). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
+
 Requires Node.js 22.16+ (validated with Node 24.20) and npm. From this directory:
 
 ```powershell
@@ -44,9 +46,9 @@ POST https://api.tokenfactory.nebius.com/v1/chat/completions
 model: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B
 ```
 
-This is a documented configuration, not an authenticated availability check. Confirm availability in the authorized account before spending credits. The adapter requires the response's model to match the requested model exactly, and rejects a truncated completion. Alternate NVIDIA model IDs can be configured with `NEBIUS_MODEL`; no arbitrary endpoint override is accepted.
+This configuration succeeded in the October 29 single-request acceptance. Availability can change; review the current account before further credit use. The adapter requires the response's model to match the requested model exactly, and rejects a truncated completion. Alternate NVIDIA model IDs can be configured with `NEBIUS_MODEL`; no arbitrary endpoint override is accepted.
 
-After the owner approves account/terms/credits and use of a key, copy `.env.example` to `.env`, set `NEBIUS_API_KEY`, set `NEBIUS_LIVE_ENABLED=true`, and restart. Never put keys in frontend code or commit `.env`. Select Nebius live inference in the UI; this explicitly sends the current evidence bundle to Nebius and may consume credits. Review/redact sensitive data first. No credentials were found or used during the current implementation.
+After the owner approves account/terms/credits and use of a key, copy `.env.example` to `.env`, set `NEBIUS_API_KEY`, set `NEBIUS_LIVE_ENABLED=true`, and restart. Never put keys in frontend code or commit `.env`. Select Nebius live inference in the UI; this explicitly sends the current evidence bundle to Nebius and may consume credits. Review/redact sensitive data first. The owner-approved acceptance used a server-side key stored only in ignored local .env.
 
 The response export includes requested and returned model, provider response ID, time, usage if returned, duration and SHA-256 digests. Store a reviewed synthetic-input live export as provider evidence. Keys and raw provider diagnostics are excluded. Exported input and report may contain sensitive incident text; keep private unless deliberately reviewed for publication.
 
@@ -81,7 +83,7 @@ See `submission/READINESS.md` for the exact remaining submission blockers. MIT l
 
 The one-request live acceptance entry is `npm.cmd run acceptance`. Its default is local preflight only, even with a key configured. See `submission/LIVE-ACCEPTANCE.md` for the exact synthetic request, fixed NVIDIA model, 5,000-token output cap, one-call/no-retry limit, account and billing review, approval file and persistent attempt lock. The October 29 owner-approved execution returned an accepted report; the persistent lock prevents another blind invocation. `npm.cmd run qa:failures` reproduces the four error presentations with local browser-response injection only.
 
-If no account exists yet, `submission/ACCOUNT-AND-CREDITS.md` records the official account / hackathon credit / Builder Program routes, observed form fields, copy-ready project description, and exact owner actions still needed. Advertised credit offers have not been redeemed or granted.
+If no account exists yet, `submission/ACCOUNT-AND-CREDITS.md` records the official account / hackathon credit / Builder Program routes, observed form fields, copy-ready project description, and exact owner actions still needed. The event promo was redeemed October 29 and USD 25 was confirmed before the approved request; Builder Program membership is separate and unverified.
 
 `evidence/IncidentAtlas-local-demo.mp4` is a 61.84-second silent, captioned recording of the real offline UI. `evidence/VALIDATION.md` records local checks and their limits. `deliverables/IncidentAtlas-local-review.zip` is the source/evidence review package; `.env`, node_modules, build output and temporary recordings are excluded. `MANIFEST.json` records SHA-256 digests. Run `node scripts/package.mjs`, then `node scripts/verify-archive.mjs` to regenerate and check the archive.
 
