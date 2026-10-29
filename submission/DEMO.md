@@ -1,6 +1,20 @@
-# IncidentAtlas submission demonstration
+# Current submission demonstration
 
-Current video: `evidence/IncidentAtlas-submission-demo.mp4`, recorded October 29, 2026. FFprobe duration: **72.00 seconds**. Silent actual application and saved provider JSON footage in Chrome, English burned-in captions, no music. It shows offline examples followed by the saved response from the separately approved real Nebius request. It does not make a new model request.
+Public video: https://youtu.be/Syk7d-4AO0Y . Published October 30, 2026 (MYT), following explicit owner approval. FFprobe duration: **81.48 seconds**. English burned captions, actual app footage, no music or narration.
+
+Browser demo: https://kaivenn52.github.io/incident-atlas/
+
+The video opens with conflicting regional recovery evidence, inspects source citations, distinguishes candidates from confirmed causes, shows the actual saved Nebius/Nemotron result inside the product, flags runbook-only candidate support, exports a Markdown handoff and demonstrates an untrusted log payload. Recording and replay make no new model request.
+
+Reproduce with live inference disabled and the local server running: `npm run record:competition`. Local MP4: `evidence/IncidentAtlas-competition-demo.mp4`; captions: `evidence/competition-demo.srt`; metadata: `evidence/competition-demo-metadata.json`. Generated recording artifacts remain excluded from source archives. Publication and playback were verified; see `evidence/publication/public-release.json`.
+
+## Historical recordings
+
+The sections below preserve earlier recordings and the status at their creation. Their instructions and pending-inference statements are historical. The current video above is the submission reference.
+
+### October 29 demonstration
+
+Historical video: `evidence/IncidentAtlas-submission-demo.mp4`, recorded October 29, 2026. FFprobe duration: **72.00 seconds**. Silent actual application and saved provider JSON footage in Chrome, English burned-in captions, no music. It shows offline examples followed by the saved response from the separately approved real Nebius request. It does not make a new model request.
 
 Reproduce with the server running and live inference disabled: `node scripts/record-demo.mjs --submission`. The script refuses to record if the status endpoint reports live inference enabled. It exercises fixture calls and then displays the existing provider-acceptance.json file. No generated UI reconstruction or AI imagery is used.
 
@@ -32,6 +46,6 @@ Instructions inside a log stay inside the log. This payload cannot gain access t
 
 Export the evidence, report and provenance for review. The Nebius Nemotron adapter is implemented, but real inference still requires an authorized account and successful validated response.”
 
-## Final qualifying video
+## Historical plan for a qualifying video
 
 After live inference is authorized and verified, rerecord a brief live sequence, expose the returned model and redacted provenance, keep the offline/synthetic disclosure for fixture sections, and include actual provider feedback in the submission. Keep the complete video under three minutes. Upload to public YouTube only after owner review; confirm the durable public URL and playability before adding it to Devpost.

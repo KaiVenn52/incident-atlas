@@ -2,7 +2,7 @@
 
 Public code: https://github.com/KaiVenn52/incident-atlas
 
-Source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.0
+Source test build: https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.1
 
 ## Open the browser demo
 
@@ -12,7 +12,7 @@ No installation, account or payment required. Choose **Review real Nebius run**,
 
 ## New review build
 
-The revised source adds a static browser build (`npm run build:demo`), a **Review real Nebius run** entry, source-type warnings for candidate explanations, and a Markdown handoff. Its public deployment is verified. The v0.2.0 source test build includes these additions; v0.1.0 remains a historical version.
+The revised source adds a static browser build (`npm run build:demo`), a **Review real Nebius run** entry, source-type warnings for candidate explanations, and a Markdown handoff. Its public deployment is verified. The v0.2.1 source test build includes these additions; v0.1.0 remains a historical version.
 
 ## Run the app
 

@@ -16,7 +16,7 @@ Build with `npm run build:demo`; serve `dist-demo` at `/incident-atlas/`. `npm r
 
 ## Run locally
 
-Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.2.0 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.0). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
+Public repository: [KaiVenn52/incident-atlas](https://github.com/KaiVenn52/incident-atlas). Downloadable source test build: [v0.2.1 release](https://github.com/KaiVenn52/incident-atlas/releases/tag/v0.2.1). Start with the [judge quickstart](submission/JUDGE-QUICKSTART.md).
 
 Requires Node.js 22.16+ (validated with Node 24.20) and npm. From this directory:
 

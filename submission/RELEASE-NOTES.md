@@ -1,7 +1,8 @@
-IncidentAtlas is an evidence-first incident review desk. This source test build includes the Node API server, React interface, three fictional offline cases, MIT license, and one reviewed real Nebius/NVIDIA inference receipt.
+IncidentAtlas now has a zero-key browser review demo, an in-product viewer for the accepted Nebius/NVIDIA response, runbook-only citation warnings and a Markdown incident handoff.
 
-Requires Node.js 22.16+ and npm. Extract the ZIP, then run npm ci, npm run build, npm start, and open http://127.0.0.1:4318. Windows PowerShell can use npm.cmd. No account or payment is needed for offline demonstrations. See submission/JUDGE-QUICKSTART.md.
+Try it: https://kaivenn52.github.io/incident-atlas/
+Watch the revised 81-second demonstration: https://youtu.be/Syk7d-4AO0Y
 
-Evidence: 52 local tests passed, production build passed; one actual Nemotron request accepted in 10.37 seconds with 582 input and 2,840 output tokens. This is one fictional case, not a production accuracy benchmark.
+Validation: 57 local automated tests passed; desktop/mobile browser QA and eight injected failure-state checks passed. The public browser deployment, source inspection, conflict case and handoff download were separately verified. No new provider request was made for this release. One real synthetic-case inference is integration evidence, not a production accuracy benchmark.
 
-The bundled 61.84-second offline video is historical and is not the final public YouTube submission. No API key, voucher, personal onboarding screenshots, local approval or raw live dispatch lock is distributed.
+Download and extract IncidentAtlas-local-review.zip, then follow submission/JUDGE-QUICKSTART.md. The ZIP contains source and reviewed evidence; Node dependencies, build output, credentials and private onboarding are excluded. The older v0.1.0 artifact and prior public video remain available.

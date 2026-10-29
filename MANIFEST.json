@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-29T16:43:16.150Z",
+  "createdAt": "2026-10-29T16:44:56.962Z",
   "providerInference": true,
   "providerEvidence": "evidence/provider-acceptance.json",
   "files": [
@@ -265,11 +265,11 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "db53bc2d5dd68b36fa1451e7008b2972f277892ab37bb7e4c492e9962d931fe7"
+      "sha256": "e1050f007c4e9ab49ee80dbe23597966e7f1ef68610befe5aa092b80d77f46a7"
     },
     {
       "path": "package.json",
-      "sha256": "1ac3e56f6fe2f140fbf60fcc4c93999f5862e0652e1d7902e9228be6e9e9ec99"
+      "sha256": "31748e974254324545c0344f476c401b24d0c158e9ff1e32b589b95956b930df"
     },
     {
       "path": "public/favicon.svg",
@@ -277,7 +277,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b7c9a7d71668e857f557bd8effd38f9fdcebaff1e37ad9ac6250e22c771ca035"
+      "sha256": "801b61fa1a3a0e61fc7bdec0c80dc891a9723112aa64971c87c4fb1bcfb26788"
     },
     {
       "path": "scripts/build-demo.mjs",
@@ -349,7 +349,7 @@
     },
     {
       "path": "submission/ACCOUNT-AND-CREDITS.md",
-      "sha256": "2e64f218258afa0a16c189b36cacd6fd36def0e8f41b6b7ed1a5f9b8e5620007"
+      "sha256": "b7c54dfa01f9f668b514383348e5f0235ef75b6f45287dc639829b688499ec90"
     },
     {
       "path": "submission/COMPETITION-REVIEW.md",
@@ -357,7 +357,7 @@
     },
     {
       "path": "submission/DEMO.md",
-      "sha256": "d009efbda15ffa5b9fadd58eda140230d894db20ddb4fe2a262e958a441235e5"
+      "sha256": "bde14dcd005a4c3e94bb86456230b9185bbe80fdff7d1bbbf42c80c5b16c6a39"
     },
     {
       "path": "submission/DESIGN.md",
@@ -365,7 +365,7 @@
     },
     {
       "path": "submission/JUDGE-QUICKSTART.md",
-      "sha256": "0c7da70b7e66f9f45900f89719f2ca067d706f75cd66f3214b71ab8510fe367c"
+      "sha256": "f70022860bc7c4427bceb71db9a4a57e15c7090931019ac92d57c9f3f0b52db8"
     },
     {
       "path": "submission/LIVE-ACCEPTANCE.md",
@@ -377,7 +377,7 @@
     },
     {
       "path": "submission/RELEASE-NOTES.md",
-      "sha256": "4589aacc99bb70f71e7c36198273f7e673078dd3347083324d980d9498a0277f"
+      "sha256": "eaf04468f642092690af1fd40ae8b87ec740f3729ebe2b4b311986802560f7b5"
     },
     {
       "path": "submission/RULES.md",
