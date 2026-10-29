@@ -1,6 +1,6 @@
 # YouTube publication copy
 
-Saved on October 29, 2026 as **Unlisted**, per the owner's final instruction. Channel: Kang Ming Wong. Studio confirmed saved visibility and checks found no issues. The viewing URL is kept only in excluded private records; do not place it in this public repository or its source ZIP. Public visibility was not enabled. Final submission must resolve the official publicly-visible-video wording without silently changing the owner's preference.
+Published on October 29, 2026 as **Public**, following the owner's explicit instruction to change the initial Unlisted setting. Channel: Kang Ming Wong. Studio confirmed Public and all changes saved; checks found no issues. Video: https://youtu.be/0ncrvV8CwM8 . Duration: 72 seconds. The viewing page was refreshed successfully. Final Devpost submission remains separate.
 
 Title: IncidentAtlas | Evidence-first incident review with Nebius + NVIDIA Nemotron
 

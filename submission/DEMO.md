@@ -6,7 +6,7 @@ Reproduce with the server running and live inference disabled: `node scripts/rec
 
 The new captions are `evidence/submission-demo.srt`; metadata and validation are `evidence/submission-demo-metadata.json` and `evidence/submission-demo-validation.json`. Publication copy is in `YOUTUBE.md`. One fictional case does not establish model accuracy; root cause remains unknown and exact citations require human causal review.
 
-The owner approved upload, then explicitly selected Unlisted rather than Public. The video was saved as Unlisted in the Kang Ming Wong channel, and Studio confirmed that visibility. Its viewing URL and local publication screenshots are retained only in excluded private onboarding records, not in this public source document. The new video file and recording artifacts are ignored/excluded from source archives. The competition's publicly-visible-video requirement remains an unresolved final-review item; do not silently change visibility or claim full compliance. Final Devpost submission remains separate.
+Public YouTube video: https://youtu.be/0ncrvV8CwM8 . The owner initially selected Unlisted, then explicitly requested Public on October 29. Studio confirmed Public with all changes saved; the viewing page was refreshed successfully. The generated local MP4 and recording artifacts remain excluded from source archives; the public viewing URL is included in submission materials. Final Devpost submission remains separate.
 
 ## Historical offline recording
 

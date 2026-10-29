@@ -81,6 +81,8 @@ See `submission/READINESS.md` for the exact remaining submission blockers. MIT l
 
 ## Review artifacts
 
+Public 72-second submission demonstration: [Watch IncidentAtlas on YouTube](https://youtu.be/0ncrvV8CwM8). It shows offline application examples and the saved response from the separately approved real Nebius request; recording made no new model call. Final Devpost submission remains pending.
+
 The one-request live acceptance entry is `npm.cmd run acceptance`. Its default is local preflight only, even with a key configured. See `submission/LIVE-ACCEPTANCE.md` for the exact synthetic request, fixed NVIDIA model, 5,000-token output cap, one-call/no-retry limit, account and billing review, approval file and persistent attempt lock. The October 29 owner-approved execution returned an accepted report; the persistent lock prevents another blind invocation. `npm.cmd run qa:failures` reproduces the four error presentations with local browser-response injection only.
 
 If no account exists yet, `submission/ACCOUNT-AND-CREDITS.md` records the official account / hackathon credit / Builder Program routes, observed form fields, copy-ready project description, and exact owner actions still needed. The event promo was redeemed October 29 and USD 25 was confirmed before the approved request; Builder Program membership is separate and unverified.

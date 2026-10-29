@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-29T09:32:41.608Z",
+  "createdAt": "2026-10-29T09:36:27.083Z",
   "providerInference": true,
   "providerEvidence": "evidence/provider-acceptance.json",
   "files": [
@@ -217,7 +217,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "27630aeb6ed780f90be690de670064220bef12483e71754bd6eb04901cdf257a"
+      "sha256": "8ba01a3ee693410db765afbe07ab0647a511b9edc98e3d6bbf28b62cd3b17bc4"
     },
     {
       "path": "scripts/check-clean.mjs",
@@ -269,7 +269,7 @@
     },
     {
       "path": "submission/DEMO.md",
-      "sha256": "2d0e9d9696791977eb200f264b009681ebebae2ca0e73421346d7af07fea54e5"
+      "sha256": "d009efbda15ffa5b9fadd58eda140230d894db20ddb4fe2a262e958a441235e5"
     },
     {
       "path": "submission/DESIGN.md",
@@ -285,7 +285,7 @@
     },
     {
       "path": "submission/READINESS.md",
-      "sha256": "8308f18c678984bab1d4c914f73cd6f414928303cc319cf28e2654b5ae4f1658"
+      "sha256": "260650fe01fbf94daf4c5d08a74b1929f9e6f0da4f706f3125412e725c059722"
     },
     {
       "path": "submission/RELEASE-NOTES.md",
@@ -297,11 +297,11 @@
     },
     {
       "path": "submission/SUBMISSION.md",
-      "sha256": "c4572cd62bc56b864c9853b4f970fab3a81da520bcc96e488050448ec352c899"
+      "sha256": "03916428e80a95a276c4ab38550cbf006e7e3cba90008b5dc7adaad1146f3f46"
     },
     {
       "path": "submission/YOUTUBE.md",
-      "sha256": "3767bcd6816cc879c8aae3ffa3888f3e8f517e8ec848d05e388ef21dd4733424"
+      "sha256": "3dfc16ae47bc5c776e165e1c7678ab99328abd167e5b44d2c32b30168b56f567"
     },
     {
       "path": "tests/acceptance.test.mjs",
